@@ -18,13 +18,15 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="countdown"
-  document.getElementById("countdown").innerHTML = days + " days " + hours + " hours "
-  + minutes + " minutes " + seconds + " seconds ";
-
+  // Display the result in the element with class="countdown"
+  document.getElementById("day").innerHTML = "<div class='number'>" + days + "</div>" + " days";
+  document.getElementById("hour").innerHTML = "<div class='number'>" + hours + "</div>" + " hours";
+  document.getElementById("minute").innerHTML = "<div class='number'>" + minutes + "</div>" + " minutes";
+  document.getElementById("second").innerHTML = "<div class='number'>" + seconds + "</div>" + " seconds";
+  
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "the countdown is finished!";
+    document.getElementsByClassName("countdown").innerHTML = "the countdown is finished!";
   }
 }, 1000);

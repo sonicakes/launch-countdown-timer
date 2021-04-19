@@ -54,18 +54,39 @@ table {
     height: 100vh;
     font-family: 'Red Hat Text', sans-serif;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
-#countdown {
+.countdown {
     color: hsl(345, 95%, 68%);
+    display: flex;
+}
+
+.countdown > div {
+    margin-right: 30px;
+}
+
+.countdown .number {
+    background: hsl(236, 21%, 26%);
+    width: 200px;
+    height: 200px;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
 }
 
 .title {
     font-size: 36px;
     text-transform: uppercase;
     letter-spacing: 5px;
+    margin-top: 15%;
+}
+
+.hills {
+    width: 100%;
 }

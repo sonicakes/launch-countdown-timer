@@ -61,8 +61,11 @@ table {
 }
 
 .countdown {
-    color: hsl(345, 95%, 68%);
     display: flex;
+    color: hsl(237, 18%, 59%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
 }
 
 .countdown > div {
@@ -70,7 +73,7 @@ table {
 }
 
 .countdown .number {
-    background: hsl(236, 21%, 26%);
+    background: hsl(235, 16%, 14%);
     width: 200px;
     height: 200px;
     font-size: 80px;
@@ -78,6 +81,8 @@ table {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    color: hsl(345, 95%, 68%);
+    margin-bottom: 20px;
 }
 
 .title {
